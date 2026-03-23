@@ -4,7 +4,7 @@
 
 An end-to-end data analytics platform analyzing **15 seasons of F1 data (2010–2024)** across six analytical modules — combining historical race results from the Ergast API with real 240 Hz car telemetry from FastF1 to answer the sport's most debated question.
 
-> **[Live Dashboard →](https://f1-race-intelligence.streamlit.app)** · [Harthik Royal Mallichetty](https://github.com/harthikrm) · MSBA Data Science, UT Dallas
+> **[Live Dashboard ->](https://f1-race-intelligence.streamlit.app)** · [Harthik Royal Mallichetty](https://github.com/harthikrm) · MSBA Data Science, UT Dallas
 
 ---
 
@@ -103,8 +103,8 @@ SPLIT_PART(q3, ':', 1)::INTEGER * 60000
 ```
 f1-race-intelligence/
 ├── data/
-│   ├── raw/                  ← JSON (Ergast) + Parquet (FastF1 telemetry)
-│   └── processed/            ← f1.db (DuckDB, 4.0 MB, 25 tables/views)
+│   ├── raw/                  <- JSON (Ergast) + Parquet (FastF1 telemetry)
+│   └── processed/            <- f1.db (DuckDB, 4.0 MB, 25 tables/views)
 ├── notebooks/
 │   ├── 00_data_pipeline.ipynb
 │   ├── 01_driver_comparison.ipynb
@@ -115,16 +115,16 @@ f1-race-intelligence/
 │   └── 06_lap_visualizer.ipynb
 ├── sql/
 │   ├── 01_schema.sql
-│   ├── 02_feature_engineering.sql  ← 14 views, 256 lines
+│   ├── 02_feature_engineering.sql  <- 14 views, 256 lines
 │   └── 03_analysis_queries.sql
 ├── src/
-│   ├── ingest.py             ← Ergast pagination + FastF1 session caching
-│   ├── build_db.py           ← DuckDB schema builder
-│   ├── features.py           ← Feature engineering functions
-│   ├── models.py             ← XGBoost training + SHAP attribution
-│   └── viz.py                ← Plotly chart functions
+│   ├── ingest.py             <- Ergast pagination + FastF1 session caching
+│   ├── build_db.py           <- DuckDB schema builder
+│   ├── features.py           <- Feature engineering functions
+│   ├── models.py             <- XGBoost training + SHAP attribution
+│   └── viz.py                <- Plotly chart functions
 ├── app/
-│   └── streamlit_app.py      ← 6-tab dashboard, F1 dark theme (#0D0D0D / #E8002D)
+│   └── streamlit_app.py      <- 6-tab dashboard, F1 dark theme (#0D0D0D / #E8002D)
 ├── requirements.txt
 └── README.md
 ```
